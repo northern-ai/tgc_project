@@ -103,7 +103,7 @@ a:hover {
 }
 
 .newslater_tgc {
-  background: linear-gradient(to right, #2083d7, #2185d9ad) !important;
+  background: linear-gradient( #2083d7, #2185d9ad) !important;
 }
 
 @media (min-width:768px) {
@@ -247,19 +247,23 @@ a:hover {
 }
 
 .newsletter_info p {
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
-
+.fa-phone:before {
+  content: "\f095";
+}
 .newsletter_info p button {
-  background: black;
-  width: 120px;
-  height: 30px;
+  background:linear-gradient( #1381e1, #054478) !important;
+  box-shadow: 2px 2px 5px black;
+  width: auto;
   border: none;
   border-radius: 5px;
   color: white;
+  padding: 0px 20px 0px 20px;
   font-size: 18px;
   margin-right: 20px;
 }
@@ -3072,6 +3076,9 @@ a {
       margin-left: -13px;
       height: 50px;
       object-fit: contain;
+  }
+  .our_corporate_clients .clients ul{
+    height: 120px !important;
   }
 }
 
@@ -14025,6 +14032,7 @@ button.close {
   background-color: #ffffff;
 }
 .blogcont {
+  width: 100% !important;
   padding-left: 0;
 }
 .blogcont .blogtile {
@@ -14174,7 +14182,8 @@ button.close {
   box-shadow: 2px 2px 10px;
 }
 .the_edureka_edge .edge-item .edge-img {
-  height: 85px;
+  max-height: 85px;
+  height: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14190,6 +14199,9 @@ button.close {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.the_edureka_edge .edge-item .edge-img img {
+  height: 70px;
 }
 .the_edureka_edge .edge-item .edge-img i.icon-realtime {
   font-size: 50px;
@@ -14653,7 +14665,15 @@ ul li {
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   .ctaBtn {
-    margin-left: 8em !important;
+    background: linear-gradient( #1381e1, #054478) !important;
+    box-shadow: 2px 2px 5px black;
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 0em !important;
   }
 
   .secondNav {
